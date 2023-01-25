@@ -58,8 +58,9 @@ body {
     align-items: center;
 }
 
-.results p {
+.tip-text, .total-text {
     font-size: 1.2em;
+    display: none;
 }
 
 .bold-text {
