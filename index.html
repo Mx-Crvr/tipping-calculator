@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script src="./script.js" defer></script>
+</head>
+<body>
+   
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipping Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main>
+        <section class="form">
+            <div class="input-group bill-amount mb-3">
+                <span class="input-group-text">R</span>
+                <input type="text" class="form-control" aria-label="Amount" placeholder="Bill Amount" id="bill-input">
+              </div>
+
+              <div class="input-group mb-3">
+                <select class="select btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="select">
+                <div class="dropdown-menu">
+                  <option value="0" class="dropdown-item service-level">Select level of service...</option>
+                  <hr class="dropdown-divider">
+
+                  <option value="0" class="dropdown-item">Terrible</option>
+                  <hr class="dropdown-divider">
+
+                  <option value="5" class="dropdown-item">Poor</option>
+                  <hr class="dropdown-divider">
+
+                  <option value="10" class="dropdown-item">Moderate</option>
+                  <hr class="dropdown-divider">
+
+                  <option value="15" class="dropdown-item">Good</option>
+                  <hr class="dropdown-divider">
+
+                  <option value="20" class="dropdown-item">Very good</option>
+                  <hr class="dropdown-divider">
+
+                  <option value="25" class="dropdown-item">Exceptional</option>
+                  <hr class="dropdown-divider">
+
+                  <option value="custom" class="dropdown-item">Custom</option>
+                  <hr class="dropdown-divider">
+                </div>
+                </select>
+              </div>
+
+              <div class="btn-wrapper">
+                <button class="calculate-btn" id="calculate-btn">Calculate</button>
+              </div>
+        </section>
+
+        <section class="results">
+            <p class="tip-amount" id="tip-amount"><span class="bold-text">Tip Amount: </span></p>
+            <p class="total-amount" id="total-amount"><span class="bold-text">Total Amount: </span></p>
+        </section>
+        
+          
+      
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
