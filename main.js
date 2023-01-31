@@ -7,15 +7,33 @@ const select = document.getElementById('select');
 const tipText = document.getElementById('tip-amount');
 const totalText = document.getElementById('total-amount');
 const currency = document.getElementById('currency');
+const customAmountBox = document.getElementById('custom-amount-wrapper');
+const customAmount = document.getElementById('custom-amount');
+
+
+select.addEventListener('change', () => {
+    if (select.value === 'custom') {
+        customAmountBox.style.display = 'block'
+    };
+});
 
 
 function getTip() {
-    return (+select.value / 100) * +billInput.value;
-}
+    if (!select.value === 'custom') {
+        return (+select.value / 100) * (+billInput.value);
+    } else {
+        return +(customAmount.value); 
+    }
+};
 
 function getTotal() {
-    return (+billInput.value) + getTip()
-}
+    if (!select.value === 'custom') {
+        return (+billInput.value) + getTip();
+    } else {
+        return (+customAmount.value) + (+billInput.value)
+    }
+
+};
 
 // Removes button and inputs and displays results of tip & total calculation
 function answerUI() {
@@ -26,17 +44,18 @@ function answerUI() {
     tipText.style.display = 'block';
     totalText.style.display = 'block';
     currency.style.display = 'none';
-}
+    customAmount.style.display = 'none';
+};
 
 btn.addEventListener('click', () => {
     answerUI();
     tipText.innerText = `Tip Amount: ${getTip()}`
     totalText.innerText = `Total Amount: ${getTotal()}`;
-})
+});
 
 btn2.addEventListener('click', () => {
     resetUI();
-})
+});
 
 function resetUI() {
     btn.style.display = 'block';
@@ -50,4 +69,4 @@ function resetUI() {
     currency.style.display = 'block';
     tipText.innerText = `Tip Amount: `;
     totalText.innerText = `Tip Amount: `;
-}
+};
