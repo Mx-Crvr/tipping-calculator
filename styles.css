@@ -24,7 +24,6 @@ body {
     width: 50%;
 }
 
-
 .select {
     border: 1px solid #d2d2d2;
 }
@@ -55,7 +54,6 @@ body {
         border: #16161dd9 solid 1px;
     }
 
-
 .results {
     display: flex;
     flex-direction: column;
@@ -76,6 +74,12 @@ body {
     display: none;
 }
 
+#custom-amount-wrapper {
+    text-align: center;
+    display: none;
+    width: 50%;
+    margin: auto;
+}
 
 @media only screen and (max-width: 600px) {
     .form {
@@ -130,7 +134,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 1250px) {
     .form {
         margin: 8em 0 0 0;
         display: flex;

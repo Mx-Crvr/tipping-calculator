@@ -11,7 +11,7 @@
   </head>
   <body>
     <main>
-        <section class="form">
+        <section class="form" id="form">
             <div class="input-group bill-amount mb-3">
                 <span class="input-group-text" id="currency">R</span>
                 <input type="text" class="form-control" aria-label="Amount" placeholder="Bill Amount" id="bill-input">
@@ -47,6 +47,10 @@
                 </select>
               </div>
 
+              <div id="custom-amount-wrapper">
+                <input type="number" placeholder="100" class="form-control" id="custom-amount">
+              </div>
+              
               <div class="btn-wrapper">
                 <button class="calculate-btn" id="calculate-btn">Calculate</button>
                 
