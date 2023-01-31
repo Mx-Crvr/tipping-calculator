@@ -13,7 +13,7 @@
     <main>
         <section class="form">
             <div class="input-group bill-amount mb-3">
-                <span class="input-group-text">R</span>
+                <span class="input-group-text" id="currency">R</span>
                 <input type="text" class="form-control" aria-label="Amount" placeholder="Bill Amount" id="bill-input">
               </div>
 
@@ -49,13 +49,19 @@
 
               <div class="btn-wrapper">
                 <button class="calculate-btn" id="calculate-btn">Calculate</button>
+                
               </div>
         </section>
 
         <section class="results">
-            <p class="tip-amount" id="tip-amount"><span class="bold-text">Tip Amount: </span></p>
-            <p class="total-amount" id="total-amount"><span class="bold-text">Total Amount: </span></p>
+            <p class="tip-amount" id="tip-amount"></p>
+            <p class="total-amount" id="total-amount"></p>   
         </section>
+
+        <div class="btn-wrapper">
+          <button id="calculate-again-btn" class="calculate-btn calculate-again-btn">Calculate again</button>
+        </div>
+
         
           
       

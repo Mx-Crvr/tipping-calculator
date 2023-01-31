@@ -32,6 +32,11 @@ body {
         border: 1px solid #d2d2d2;   
     }
 
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .calculate-btn {
     border: 1px solid #d2d2d2;
     width: 25%;
@@ -58,12 +63,122 @@ body {
     align-items: center;
 }
 
-.tip-text, .total-text {
+.tip-amount, .total-amount {
     font-size: 1.2em;
     display: none;
 }
 
-.bold-text {
+.total-amount {
     font-weight: 600;
-    text-decoration: underline;
+}
+
+.calculate-again-btn {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .form {
+        margin: 8em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 0.2em;
+    }
+    
+    .select, .bill-amount {
+        margin: auto;
+        width: 75%;
+    }
+    
+    
+    .select {
+        border: 1px solid #d2d2d2;
+    }
+    
+    .btn-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .calculate-btn {
+        border: 1px solid #d2d2d2;
+        width: 50%;
+        border-radius: 0.2rem;
+        transform: translateX(-0em);
+        padding: 0.4em 0;
+        border: #16161d solid 1px;
+        background-color: #16161d;
+        color: #f2f2f2;
+        transition: all 0.2s ease;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .results {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tip-amount, .total-amount {
+        font-size: 1.2em;
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .form {
+        margin: 8em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 0.2em;
+    }
+    
+    .select, .bill-amount {
+        margin: auto;
+        width: 75%;
+    }
+    
+    
+    .select {
+        border: 1px solid #d2d2d2;
+    }
+    
+    .btn-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .calculate-btn {
+        border: 1px solid #d2d2d2;
+        width: 50%;
+        border-radius: 0.2rem;
+        transform: translateX(-0em);
+        padding: 0.4em 0;
+        border: #16161d solid 1px;
+        background-color: #16161d;
+        color: #f2f2f2;
+        transition: all 0.2s ease;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .results {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tip-amount, .total-amount {
+        font-size: 1.2em;
+        display: none;
+    }
 }
