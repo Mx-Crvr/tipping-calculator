@@ -19,7 +19,7 @@ select.addEventListener('change', () => {
 
 
 function getTip() {
-    if (!select.value === 'custom') {
+    if (select.value != 'custom') {
         return (+select.value / 100) * (+billInput.value);
     } else {
         return +(customAmount.value); 
